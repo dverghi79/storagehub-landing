@@ -277,7 +277,7 @@
     /* ── Grids ── */
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
     .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-    @media (max-width: 768px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } .stats-grid { grid-template-columns: 1fr !important; gap: 1.5rem !important; } }
 
     /* ── Hero grid ── */
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1120px; }
@@ -584,6 +584,29 @@
 
 
   <!-- ═══════════════════════════════════════════
+       STATS STRIP — Social proof metrics
+       ═══════════════════════════════════════════ -->
+  <section style="padding:3rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="reveal stats-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center;">
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;color:var(--text-primary);font-variant-numeric:tabular-nums;">8 min</div>
+          <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Average setup time</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;color:var(--text-primary);font-variant-numeric:tabular-nums;">3</div>
+          <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Data sources connected</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;color:var(--text-primary);font-variant-numeric:tabular-nums;">45 min</div>
+          <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.25rem;">Saved every morning</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
        THE PROBLEM — headline+image grid, then 3 glass cards
        ═══════════════════════════════════════════ -->
   <section id="the-problem">
@@ -707,6 +730,18 @@
           </div>
           <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Connect storEDGE</h3>
           <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Enter your storEDGE API credentials. StorageHub pulls occupancy, tenant, and revenue data from every facility in your account automatically.</p>
+          <div style="margin-top:1.5rem;display:flex;justify-content:center;">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="25" width="80" height="60" rx="8" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.06)"/>
+              <circle cx="60" cy="55" r="18" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.08)"/>
+              <path d="M54 55l4 4 8-8" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35 35h10" stroke="#3f3f46" stroke-width="2" stroke-linecap="round"/>
+              <path d="M35 42h7" stroke="#3f3f46" stroke-width="2" stroke-linecap="round"/>
+              <rect x="70" y="32" width="22" height="12" rx="3" stroke="#3f3f46" stroke-width="1.5" fill="rgba(16,185,129,0.04)"/>
+              <path d="M74 38h14" stroke="#3f3f46" stroke-width="1" stroke-linecap="round"/>
+              <path d="M40 95l10-8 15 5 15-10 10 3" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            </svg>
+          </div>
         </div>
 
         <div class="glass-card reveal reveal-delay-2" style="position:relative;overflow:hidden;">
@@ -719,6 +754,24 @@
           </div>
           <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Link QuickBooks</h3>
           <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">One-click OAuth connection to QuickBooks Online. StorageHub maps PMS revenue entries to your chart of accounts automatically. No manual journal entries.</p>
+          <div style="margin-top:1.5rem;display:flex;justify-content:center;">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="30" width="40" height="55" rx="6" stroke="#3f3f46" stroke-width="2" fill="rgba(16,185,129,0.04)"/>
+              <rect x="65" y="30" width="40" height="55" rx="6" stroke="#3f3f46" stroke-width="2" fill="rgba(16,185,129,0.04)"/>
+              <line x1="25" y1="45" x2="45" y2="45" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="25" y1="52" x2="40" y2="52" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="25" y1="59" x2="43" y2="59" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="75" y1="45" x2="95" y2="45" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="75" y1="52" x2="92" y2="52" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="75" y1="59" x2="88" y2="59" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M55 50h10" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+              <path d="M55 57h10" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="60" cy="53" r="12" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.1)"/>
+              <path d="M56 53l3 3 5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="30" y="40" font-size="7" fill="#71717a" font-family="monospace">PMS</text>
+              <text x="77" y="40" font-size="7" fill="#71717a" font-family="monospace">QB</text>
+            </svg>
+          </div>
         </div>
 
         <div class="glass-card reveal reveal-delay-3" style="position:relative;overflow:hidden;">
@@ -731,6 +784,22 @@
           </div>
           <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">See your portfolio</h3>
           <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Within minutes, your unified dashboard shows occupancy, revenue, delinquencies, and activity across every facility. Updated hourly, reconciled automatically.</p>
+          <div style="margin-top:1.5rem;display:flex;justify-content:center;">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="20" width="90" height="65" rx="8" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.06)"/>
+              <rect x="15" y="20" width="90" height="16" rx="8" fill="rgba(16,185,129,0.1)"/>
+              <circle cx="25" cy="28" r="3" fill="#ef4444" opacity="0.6"/>
+              <circle cx="33" cy="28" r="3" fill="#f59e0b" opacity="0.6"/>
+              <circle cx="41" cy="28" r="3" fill="#22c55e" opacity="0.6"/>
+              <rect x="25" y="44" width="25" height="18" rx="4" stroke="#3f3f46" stroke-width="1.5" fill="rgba(16,185,129,0.04)"/>
+              <rect x="55" y="44" width="25" height="18" rx="4" stroke="#3f3f46" stroke-width="1.5" fill="rgba(16,185,129,0.04)"/>
+              <rect x="85" y="44" width="12" height="18" rx="4" stroke="#3f3f46" stroke-width="1.5" fill="rgba(16,185,129,0.04)"/>
+              <text x="30" y="56" font-size="8" fill="#10b981" font-weight="bold" font-family="sans-serif">92%</text>
+              <text x="59" y="56" font-size="8" fill="#f4f4f5" font-weight="bold" font-family="sans-serif">$41K</text>
+              <path d="M25 72l15 -5 15 3 15 -8 15 2" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="85" cy="64" r="2" fill="#10b981"/>
+            </svg>
+          </div>
         </div>
 
         <div class="glass-card reveal reveal-delay-1" style="position:relative;overflow:hidden;">
@@ -743,6 +812,18 @@
           </div>
           <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Get alerted proactively</h3>
           <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Delinquency alerts, revenue discrepancies, and occupancy drops trigger notifications before they become costly problems. No more discovering issues a month late.</p>
+          <div style="margin-top:1.5rem;display:flex;justify-content:center;">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 25c-15 0-27 12-27 27 0 18 -8 23 -8 23h70s-8-5-8-23c0-15-12-27-27-27z" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.06)"/>
+              <path d="M50 75a10 10 0 0 0 20 0" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="60" cy="20" r="4" fill="#10b981" opacity="0.8"/>
+              <circle cx="85" cy="35" r="12" stroke="#ef4444" stroke-width="2" fill="rgba(239,68,68,0.1)"/>
+              <text x="81" y="39" font-size="10" fill="#ef4444" font-weight="bold" font-family="sans-serif">!</text>
+              <path d="M30 95h60" stroke="#3f3f46" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+              <rect x="35" y="98" width="20" height="6" rx="2" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1"/>
+              <rect x="60" y="98" width="20" height="6" rx="2" fill="rgba(245,158,11,0.15)" stroke="#f59e0b" stroke-width="1"/>
+            </svg>
+          </div>
         </div>
       </div>
 
@@ -830,11 +911,11 @@
           <div style="display:flex;flex-direction:column;gap:0.75rem;font-size:0.875rem;margin-bottom:1.5rem;">
             <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Priority access before public launch
+              A sample dashboard populated with demo data for a 5-facility portfolio
             </p>
             <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              Direct input on the product roadmap
+              Direct input on the product roadmap — your workflow shapes what we build
             </p>
             <p style="display:flex;align-items:center;gap:0.625rem;color:var(--text-secondary);margin:0;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
