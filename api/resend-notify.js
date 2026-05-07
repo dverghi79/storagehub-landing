@@ -15,7 +15,7 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: false, reason: 'not_configured' });
   }
 
-  const fromEmail = process.env.RESEND_FROM_EMAIL || 'LeanAI Studio <noreply@leanaistudio.com>';
+  const fromEmail = process.env.RESEND_FROM_EMAIL || 'Dario - LeanAI Studio <dario@leanaistudio.com>';
   const contactEmail = process.env.CONTACT_EMAIL || 'contact@leanaistudio.com';
   const segmentId = process.env.RESEND_SEGMENT_ID || PRODUCT_SEGMENT_ID;
 
