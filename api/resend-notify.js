@@ -40,6 +40,7 @@ module.exports = async function handler(req, res) {
       unsubscribed: false,
       properties: {
         source: productName,
+        product: productName,
         signed_up_at: new Date().toISOString(),
       },
       segments: [segmentId],
