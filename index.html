@@ -287,7 +287,7 @@
 
     /* ── Hero grid ── */
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1120px; }
-    @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero-image { display: none; } }
+    @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero-image { order: -1; margin-bottom: 1.5rem; } }
 
     /* ── Step indicator ── */
     .step-num { width: 2.5rem; height: 2.5rem; border-radius: 12px; background: var(--cyan-glow); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 700; color: var(--cyan); flex-shrink: 0; }
@@ -804,7 +804,7 @@
           <p class="section-label">Built For</p>
           <h2 class="section-title">Built for operators who want <span class="gradient-text">full visibility, not more tabs</span></h2>
         </div>
-        <div class="reveal reveal-delay-2 mobile-hide-img" style="border-radius:16px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,0.35);">
+        <div class="reveal reveal-delay-2" style="border-radius:16px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,0.35);">
           <img src="images/built-for-persona.png" alt="Self-storage portfolio owner reviewing facility performance" style="width:100%;height:auto;display:block;" loading="lazy" />
         </div>
       </div>
@@ -887,7 +887,7 @@
 
         <!-- Right: trust image + progressive disclosure form -->
         <div class="reveal reveal-delay-1">
-          <div class="mobile-hide-img" style="margin-bottom:1.5rem;border-radius:12px;overflow:hidden;">
+          <div style="margin-bottom:1.5rem;border-radius:12px;overflow:hidden;">
             <img src="images/early-access-trust.png" alt="StorageHub early access preview" style="width:100%;height:auto;display:block;" loading="lazy" />
           </div>
 
