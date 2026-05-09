@@ -288,11 +288,11 @@
     /* ── Hero grid ── */
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1120px; }
     @media (max-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; }
+      .hero-grid { grid-template-columns: 1fr; gap: 1rem; }
       .hero-text { display: contents; }
-      .hero-text > .reveal:first-child { order: 1; }   /* badge */
+      .hero-text > .reveal:first-child { order: 1; margin-bottom: 0; }   /* badge */
       .hero-text > h1 { order: 2; }                     /* headline */
-      .hero-image { order: 3; margin-bottom: 1rem; }    /* image + founder badge */
+      .hero-image { order: 3; margin-bottom: 0.5rem; }  /* image + founder badge */
       .hero-below-image { order: 4; }                   /* subheadline, bullets, CTAs */
     }
 
