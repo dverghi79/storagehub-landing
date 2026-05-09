@@ -288,8 +288,10 @@
     /* ── Hero grid ── */
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1120px; }
     @media (max-width: 768px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .hero-section { padding: 2.5rem 0 3rem !important; }
+      .hero-grid { grid-template-columns: 1fr; gap: 0.75rem; }
       .hero-text { display: contents; }
+      .hero-badge-wrap { margin-bottom: 0 !important; }
       .hero-text > .reveal:first-child { order: 1; margin-bottom: 0; }   /* badge */
       .hero-text > h1 { order: 2; }                     /* headline */
       .hero-image { order: 3; margin-bottom: 0.5rem; }  /* image + founder badge */
@@ -385,7 +387,7 @@
   <!-- ═══════════════════════════════════════════
        HERO — 2-column grid: copy left, AI image right
        ═══════════════════════════════════════════ -->
-  <section style="padding:5rem 0 4rem;position:relative;overflow:hidden;">
+  <section class="hero-section" style="padding:5rem 0 4rem;position:relative;overflow:hidden;">
     <div class="hero-gradient"></div>
     <div class="glow-orb" style="width:300px;height:300px;background:rgba(16,185,129,0.06);top:100px;right:-100px;"></div>
     <div class="glow-orb" style="width:200px;height:200px;background:rgba(16,185,129,0.04);bottom:0;left:-50px;animation-delay:3s;"></div>
@@ -394,7 +396,7 @@
       <div class="hero-grid">
         <!-- Left: Copy -->
         <div class="hero-text">
-          <div class="reveal" style="margin-bottom:1.5rem;">
+          <div class="reveal hero-badge-wrap" style="margin-bottom:1.5rem;">
             <div class="badge"><span class="dot"></span> Early Access Open · Limited spots</div>
           </div>
 
