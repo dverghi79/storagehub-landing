@@ -679,7 +679,7 @@
         <h2 class="section-title">Start seeing the full picture <span class="gradient-text">in minutes</span></h2>
       </div>
 
-      <!-- Pipeline flow — desktop only -->
+      <!-- Pipeline flow — desktop only (3 steps = low perceived effort) -->
       <div class="reveal hide-mobile" style="display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:3rem;padding:1.5rem 2rem;background:var(--surface);border:1px solid var(--border);border-radius:16px;">
         <!-- Stage 1 (cyan/green) -->
         <div style="display:flex;align-items:center;gap:0.75rem;">
@@ -688,7 +688,7 @@
           </div>
           <div>
             <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">Connect</p>
-            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">API credentials</p>
+            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">storEDGE + QuickBooks</p>
           </div>
         </div>
         <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 0.75rem;">
@@ -698,45 +698,31 @@
         <!-- Stage 2 (purple) -->
         <div style="display:flex;align-items:center;gap:0.75rem;">
           <div style="width:2.75rem;height:2.75rem;border-radius:12px;background:rgba(139,92,246,0.12);display:flex;align-items:center;justify-content:center;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.75" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.75" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
           </div>
           <div>
-            <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">Sync</p>
-            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">Auto-mapping</p>
+            <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">See</p>
+            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">Full portfolio</p>
           </div>
         </div>
         <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 0.75rem;">
-          <div style="flex:1;height:2px;background:linear-gradient(90deg,rgba(139,92,246,0.2),rgba(245,158,11,0.2));"></div>
+          <div style="flex:1;height:2px;background:linear-gradient(90deg,rgba(139,92,246,0.2),rgba(34,197,94,0.2));"></div>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin:0 -2px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
-        <!-- Stage 3 (amber) -->
-        <div style="display:flex;align-items:center;gap:0.75rem;">
-          <div style="width:2.75rem;height:2.75rem;border-radius:12px;background:rgba(245,158,11,0.1);display:flex;align-items:center;justify-content:center;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.75" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">Reconcile</p>
-            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">Revenue matching</p>
-          </div>
-        </div>
-        <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:0 0.75rem;">
-          <div style="flex:1;height:2px;background:linear-gradient(90deg,rgba(245,158,11,0.2),rgba(34,197,94,0.2));"></div>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin:0 -2px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </div>
-        <!-- Stage 4 (green) -->
+        <!-- Stage 3 (green) -->
         <div style="display:flex;align-items:center;gap:0.75rem;">
           <div style="width:2.75rem;height:2.75rem;border-radius:12px;background:rgba(34,197,94,0.1);display:flex;align-items:center;justify-content:center;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <div>
-            <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">Dashboard</p>
-            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">Portfolio live</p>
+            <p style="margin:0;font-size:0.75rem;font-weight:700;color:var(--text-primary);">Stay ahead</p>
+            <p style="margin:0;font-size:0.6rem;color:var(--text-muted);">Proactive alerts</p>
           </div>
         </div>
       </div>
 
-      <!-- Step cards -->
-      <div class="grid-2" style="gap:2rem;">
+      <!-- Step cards (3 steps = low perceived effort) -->
+      <div class="grid-3" style="gap:2rem;max-width:1000px;margin:0 auto;">
         <div class="glass-card reveal reveal-delay-1" style="position:relative;overflow:hidden;">
           <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right, var(--cyan-glow), transparent);pointer-events:none;"></div>
           <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
@@ -745,32 +731,8 @@
             </div>
             <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 1</span>
           </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Connect storEDGE</h3>
-          <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Enter your storEDGE API credentials. StorageHub pulls occupancy, tenant, and revenue data from every facility in your account automatically.</p>
-          <div style="margin-top:1.5rem;display:flex;justify-content:center;">
-            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="20" y="25" width="80" height="60" rx="8" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.06)"/>
-              <circle cx="60" cy="55" r="18" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.08)"/>
-              <path d="M54 55l4 4 8-8" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M35 35h10" stroke="#3f3f46" stroke-width="2" stroke-linecap="round"/>
-              <path d="M35 42h7" stroke="#3f3f46" stroke-width="2" stroke-linecap="round"/>
-              <rect x="70" y="32" width="22" height="12" rx="3" stroke="#3f3f46" stroke-width="1.5" fill="rgba(16,185,129,0.04)"/>
-              <path d="M74 38h14" stroke="#3f3f46" stroke-width="1" stroke-linecap="round"/>
-              <path d="M40 95l10-8 15 5 15-10 10 3" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="glass-card reveal reveal-delay-2" style="position:relative;overflow:hidden;">
-          <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right, var(--cyan-glow), transparent);pointer-events:none;"></div>
-          <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
-            <div class="step-num">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 2</span>
-          </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Link QuickBooks</h3>
-          <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">One-click OAuth connection to QuickBooks Online. StorageHub maps PMS revenue entries to your chart of accounts automatically. No manual journal entries.</p>
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">All your data in one place</h3>
+          <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Connect storEDGE and QuickBooks with API credentials and one-click OAuth. StorageHub pulls occupancy, tenant, and revenue data from every facility and maps PMS entries to your chart of accounts automatically.</p>
           <div style="margin-top:1.5rem;display:flex;justify-content:center;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="15" y="30" width="40" height="55" rx="6" stroke="#3f3f46" stroke-width="2" fill="rgba(16,185,129,0.04)"/>
@@ -781,25 +743,23 @@
               <line x1="75" y1="45" x2="95" y2="45" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
               <line x1="75" y1="52" x2="92" y2="52" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
               <line x1="75" y1="59" x2="88" y2="59" stroke="#3f3f46" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M55 50h10" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
-              <path d="M55 57h10" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
               <circle cx="60" cy="53" r="12" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.1)"/>
               <path d="M56 53l3 3 5-5" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="30" y="40" font-size="7" fill="#71717a" font-family="monospace">PMS</text>
+              <text x="22" y="40" font-size="7" fill="#71717a" font-family="monospace">storEDGE</text>
               <text x="77" y="40" font-size="7" fill="#71717a" font-family="monospace">QB</text>
             </svg>
           </div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-3" style="position:relative;overflow:hidden;">
+        <div class="glass-card reveal reveal-delay-2" style="position:relative;overflow:hidden;">
           <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right, var(--cyan-glow), transparent);pointer-events:none;"></div>
           <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
             <div class="step-num">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
             </div>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 3</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 2</span>
           </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">See your portfolio</h3>
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Your whole portfolio, one screen</h3>
           <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Within minutes, your unified dashboard shows occupancy, revenue, delinquencies, and activity across every facility. Updated hourly, reconciled automatically.</p>
           <div style="margin-top:1.5rem;display:flex;justify-content:center;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -819,16 +779,16 @@
           </div>
         </div>
 
-        <div class="glass-card reveal reveal-delay-1" style="position:relative;overflow:hidden;">
+        <div class="glass-card reveal reveal-delay-3" style="position:relative;overflow:hidden;">
           <div style="position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right, var(--cyan-glow), transparent);pointer-events:none;"></div>
           <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;">
             <div class="step-num">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 4</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);">Step 3</span>
           </div>
-          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Get alerted proactively</h3>
-          <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Delinquency alerts, revenue discrepancies, and occupancy drops trigger notifications before they become costly problems. No more discovering issues a month late.</p>
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">Problems found before they cost you</h3>
+          <p style="color:var(--text-secondary);line-height:1.65;font-size:0.95rem;">Delinquency alerts, revenue discrepancies, and occupancy drops trigger notifications the moment they appear. No more discovering issues a month late.</p>
           <div style="margin-top:1.5rem;display:flex;justify-content:center;">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M60 25c-15 0-27 12-27 27 0 18 -8 23 -8 23h70s-8-5-8-23c0-15-12-27-27-27z" stroke="#10b981" stroke-width="2" fill="rgba(16,185,129,0.06)"/>
