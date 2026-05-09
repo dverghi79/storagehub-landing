@@ -493,15 +493,27 @@
 
         <!-- Tab Panels -->
         <div class="cap-panels-container" style="padding:2.5rem;position:relative;min-height:380px;">
+
+          <!-- Panel 0: Portfolio Dashboard -->
           <div class="cap-panel active" data-panel="0">
-            <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Portfolio Dashboard</h3>
-            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;">See occupancy, revenue, NOI, and delinquency rates for every facility in one screen. Drill down by location or compare side-by-side. Updated hourly from storEDGE and QuickBooks.</p>
-            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;background:#0d0d10;">
+            <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.5rem;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin:0;">Portfolio Dashboard</h3>
+              <span style="font-size:0.75rem;font-weight:600;color:var(--cyan);white-space:nowrap;">5 facilities, 1 screen</span>
+            </div>
+            <p style="color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;font-size:0.9rem;">Occupancy, revenue, NOI, and delinquency rates for every facility in one screen. Drill down by location or compare side-by-side. Updated hourly from storEDGE and QuickBooks.</p>
+            <!-- Without / With -->
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.72rem;">
+              <span style="color:var(--text-muted);"><span style="color:#ef4444;">Today:</span> Log into storEDGE per facility, export CSVs, paste into spreadsheet</span>
+              <span style="color:var(--text-muted);">|</span>
+              <span style="color:var(--text-muted);"><span style="color:var(--cyan);">With StorageHub:</span> Open one tab, everything is there</span>
+            </div>
+            <!-- Mockup -->
+            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;background:#0d0d10;">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
                 <span style="font-size:0.85rem;font-weight:600;color:var(--text-primary);">Portfolio Overview</span>
                 <span style="font-size:0.7rem;color:var(--text-muted);">Last synced: 8s ago</span>
               </div>
-              <div class="cap-mockup-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;">
+              <div class="cap-mockup-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
                 <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;text-align:center;">
                   <div style="font-size:1.25rem;font-weight:800;color:var(--cyan);">92.4%</div>
                   <div style="font-size:0.65rem;color:var(--text-muted);margin-top:0.25rem;">Avg Occupancy</div>
@@ -515,117 +527,349 @@
                   <div style="font-size:0.65rem;color:var(--text-muted);margin-top:0.25rem;">At-Risk Revenue</div>
                 </div>
               </div>
+              <!-- Facility rows -->
+              <div style="display:flex;flex-direction:column;gap:0.4rem;">
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.4rem 0.6rem;font-size:0.65rem;color:var(--text-muted);border-bottom:1px solid var(--border);">
+                  <span>Facility</span><span>Occupancy</span><span>Revenue</span><span>Delinquent</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Oakdale Storage</span>
+                  <span style="color:var(--cyan);">94.1%</span>
+                  <span style="color:var(--text-primary);">$12,840</span>
+                  <span style="color:#f59e0b;">2 units</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Pine Valley SS</span>
+                  <span style="color:var(--cyan);">91.8%</span>
+                  <span style="color:var(--text-primary);">$9,720</span>
+                  <span style="color:var(--text-muted);">0 units</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Highway 9 Mini</span>
+                  <span style="color:#f59e0b;">87.3%</span>
+                  <span style="color:var(--text-primary);">$8,150</span>
+                  <span style="color:#ef4444;">4 units</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Lakeview Secure</span>
+                  <span style="color:var(--cyan);">96.2%</span>
+                  <span style="color:var(--text-primary);">$6,430</span>
+                  <span style="color:#f59e0b;">1 unit</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Riverside Box</span>
+                  <span style="color:var(--cyan);">93.0%</span>
+                  <span style="color:var(--text-primary);">$4,360</span>
+                  <span style="color:#f59e0b;">1 unit</span>
+                </div>
+              </div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">
               <span class="cap-chip">Multi-facility</span>
               <span class="cap-chip">Real-time sync</span>
               <span class="cap-chip">Drill-down views</span>
             </div>
           </div>
 
+          <!-- Panel 1: Revenue Reconciliation -->
           <div class="cap-panel" data-panel="1">
-            <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Revenue Reconciliation</h3>
-            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;">storEDGE payments automatically matched to QuickBooks entries. Discrepancies surfaced instantly with the exact line items that do not match, so your books stay clean without manual journal entries.</p>
-            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;background:#0d0d10;">
-              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+            <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.5rem;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin:0;">Revenue Reconciliation</h3>
+              <span style="font-size:0.75rem;font-weight:600;color:#22c55e;white-space:nowrap;">97.9% auto-matched</span>
+            </div>
+            <p style="color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;font-size:0.9rem;">storEDGE payments automatically matched to QuickBooks entries. Discrepancies surfaced with the exact line items that do not match, so your books stay clean without manual journal entries.</p>
+            <!-- Without / With -->
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.72rem;">
+              <span style="color:var(--text-muted);"><span style="color:#ef4444;">Today:</span> Export both systems, match rows in Excel, find the gap after month-end close</span>
+              <span style="color:var(--text-muted);">|</span>
+              <span style="color:var(--text-muted);"><span style="color:var(--cyan);">With StorageHub:</span> Discrepancies flagged automatically, daily</span>
+            </div>
+            <!-- Mockup -->
+            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;background:#0d0d10;">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 <span style="font-size:0.8rem;font-weight:600;color:#22c55e;">142 of 145 entries matched</span>
+                <span style="font-size:0.65rem;color:var(--text-muted);margin-left:auto;">May 2026</span>
               </div>
-              <div style="display:flex;flex-direction:column;gap:0.5rem;">
-                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.75rem;background:#1a1a1e;border-radius:6px;border:1px solid var(--border);">
-                  <span style="font-size:0.75rem;color:var(--text-secondary);">Unit 4B rent — Facility A</span>
-                  <span style="font-size:0.7rem;color:#22c55e;">Matched</span>
+              <div style="display:flex;flex-direction:column;gap:0.4rem;">
+                <!-- Header row -->
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.4rem 0.6rem;font-size:0.65rem;color:var(--text-muted);border-bottom:1px solid var(--border);">
+                  <span>Transaction</span><span>storEDGE</span><span>QuickBooks</span><span>Status</span>
                 </div>
-                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.75rem;background:#1a1a1e;border-radius:6px;border:1px solid rgba(239,68,68,0.2);">
-                  <span style="font-size:0.75rem;color:var(--text-secondary);">Late fee — Unit 12C</span>
-                  <span style="font-size:0.7rem;color:#ef4444;">$45 discrepancy</span>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Unit 4B rent - Oakdale</span>
+                  <span style="color:var(--text-primary);">$185.00</span>
+                  <span style="color:var(--text-primary);">$185.00</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">Matched</span>
                 </div>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Unit 11A rent - Pine Valley</span>
+                  <span style="color:var(--text-primary);">$220.00</span>
+                  <span style="color:var(--text-primary);">$220.00</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">Matched</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;border:1px solid rgba(239,68,68,0.25);font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Late fee - Unit 12C Hwy 9</span>
+                  <span style="color:var(--text-primary);">$45.00</span>
+                  <span style="color:#ef4444;">$0.00</span>
+                  <span style="color:#ef4444;font-size:0.65rem;font-weight:600;">-$45.00</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Unit 7F rent - Lakeview</span>
+                  <span style="color:var(--text-primary);">$310.00</span>
+                  <span style="color:var(--text-primary);">$310.00</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">Matched</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;border:1px solid rgba(239,68,68,0.25);font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Insurance - Unit 3A Oakdale</span>
+                  <span style="color:var(--text-primary);">$12.00</span>
+                  <span style="color:#ef4444;">$0.00</span>
+                  <span style="color:#ef4444;font-size:0.65rem;font-weight:600;">-$12.00</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2.5fr 1fr 1fr 0.8fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">Unit 2D rent - Riverside</span>
+                  <span style="color:var(--text-primary);">$145.00</span>
+                  <span style="color:var(--text-primary);">$145.00</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">Matched</span>
+                </div>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.65rem;border-top:1px solid var(--border);">
+                <span style="font-size:0.7rem;color:var(--text-muted);">Total unreconciled: <span style="color:#ef4444;font-weight:600;">$57.00</span></span>
+                <span style="font-size:0.65rem;color:var(--text-muted);">3 entries need review</span>
               </div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">
               <span class="cap-chip">Auto-matching</span>
               <span class="cap-chip">Discrepancy alerts</span>
               <span class="cap-chip">QuickBooks sync</span>
             </div>
           </div>
 
+          <!-- Panel 2: Delinquency Alerts -->
           <div class="cap-panel" data-panel="2">
-            <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Delinquency Alerts</h3>
-            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;">Get notified at day 5, day 15, and lien-eligible date. The cross-facility delinquency board shows your total at-risk revenue at a glance, with action dates and lien filing deadlines pre-calculated.</p>
-            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;background:#0d0d10;">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
-                <span style="font-size:0.8rem;font-weight:600;color:var(--text-primary);">Delinquency Board</span>
-                <span style="padding:0.2rem 0.6rem;border-radius:12px;font-size:0.65rem;font-weight:600;background:rgba(239,68,68,0.15);color:#ef4444;">8 units at risk</span>
+            <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.5rem;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin:0;">Delinquency Alerts</h3>
+              <span style="font-size:0.75rem;font-weight:600;color:#ef4444;white-space:nowrap;">$2,340 at risk right now</span>
+            </div>
+            <p style="color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;font-size:0.9rem;">Notified at day 5, day 15, and lien-eligible date. Cross-facility board shows total at-risk revenue at a glance, with action dates and lien filing deadlines pre-calculated.</p>
+            <!-- Without / With -->
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.72rem;">
+              <span style="color:var(--text-muted);"><span style="color:#ef4444;">Today:</span> Notice a tenant is 30 days past due, already missed the lien window</span>
+              <span style="color:var(--text-muted);">|</span>
+              <span style="color:var(--text-muted);"><span style="color:var(--cyan);">With StorageHub:</span> Alert at day 5, action plan at day 15, lien date auto-calculated</span>
+            </div>
+            <!-- Mockup -->
+            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;background:#0d0d10;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+                <span style="font-size:0.85rem;font-weight:600;color:var(--text-primary);">Delinquency Board</span>
+                <span style="padding:0.2rem 0.6rem;border-radius:12px;font-size:0.65rem;font-weight:600;background:rgba(239,68,68,0.15);color:#ef4444;">8 units across 3 facilities</span>
               </div>
               <div style="display:flex;flex-direction:column;gap:0.4rem;">
-                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.75rem;background:#1a1a1e;border-radius:6px;border-left:3px solid #f59e0b;">
-                  <span style="font-size:0.75rem;color:var(--text-secondary);">Unit 7A — Facility B</span>
-                  <span style="font-size:0.65rem;color:#f59e0b;font-weight:600;">Day 12</span>
+                <!-- Header -->
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.4rem 0.6rem;font-size:0.65rem;color:var(--text-muted);border-bottom:1px solid var(--border);">
+                  <span>Tenant / Unit</span><span>Balance</span><span>Days Late</span><span>Next Action</span>
                 </div>
-                <div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0.75rem;background:#1a1a1e;border-radius:6px;border-left:3px solid #ef4444;">
-                  <span style="font-size:0.75rem;color:var(--text-secondary);">Unit 3F — Facility A</span>
-                  <span style="font-size:0.65rem;color:#ef4444;font-weight:600;">Day 28 — Lien eligible</span>
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.5rem 0.6rem;background:#1a1a1e;border-radius:5px;border-left:3px solid #ef4444;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">J. Martinez - 3F Oakdale</span>
+                  <span style="color:var(--text-primary);">$580</span>
+                  <span style="color:#ef4444;font-weight:600;">Day 28</span>
+                  <span style="color:#ef4444;font-size:0.65rem;">Lien eligible Jun 2</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.5rem 0.6rem;background:#1a1a1e;border-radius:5px;border-left:3px solid #ef4444;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">R. Chen - 9B Hwy 9</span>
+                  <span style="color:var(--text-primary);">$420</span>
+                  <span style="color:#ef4444;font-weight:600;">Day 22</span>
+                  <span style="color:#f59e0b;font-size:0.65rem;">Final notice sent</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.5rem 0.6rem;background:#1a1a1e;border-radius:5px;border-left:3px solid #f59e0b;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">T. Nguyen - 7A Pine Valley</span>
+                  <span style="color:var(--text-primary);">$310</span>
+                  <span style="color:#f59e0b;font-weight:600;">Day 12</span>
+                  <span style="color:var(--text-muted);font-size:0.65rem;">Second notice due</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.5rem 0.6rem;background:#1a1a1e;border-radius:5px;border-left:3px solid #f59e0b;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">S. Patel - 14C Oakdale</span>
+                  <span style="color:var(--text-primary);">$265</span>
+                  <span style="color:#f59e0b;font-weight:600;">Day 9</span>
+                  <span style="color:var(--text-muted);font-size:0.65rem;">First notice sent</span>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr 0.8fr 1.2fr;gap:0.5rem;padding:0.5rem 0.6rem;background:#1a1a1e;border-radius:5px;border-left:3px solid var(--cyan);font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">M. Davis - 2E Riverside</span>
+                  <span style="color:var(--text-primary);">$185</span>
+                  <span style="color:var(--cyan);font-weight:600;">Day 5</span>
+                  <span style="color:var(--text-muted);font-size:0.65rem;">Auto-reminder queued</span>
                 </div>
               </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.75rem;padding-top:0.65rem;border-top:1px solid var(--border);">
+                <span style="font-size:0.7rem;color:var(--text-muted);">Total at-risk: <span style="color:#ef4444;font-weight:600;">$2,340</span></span>
+                <span style="font-size:0.65rem;color:var(--text-muted);">2 lien-eligible this month</span>
+              </div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
-              <span class="cap-chip">Day 5 alerts</span>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">
+              <span class="cap-chip">Day 5 / 15 / lien alerts</span>
               <span class="cap-chip">Lien tracking</span>
               <span class="cap-chip">Portfolio-wide</span>
             </div>
           </div>
 
+          <!-- Panel 3: Occupancy Trends -->
           <div class="cap-panel" data-panel="3">
-            <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Occupancy Trends</h3>
-            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;">Track move-in and move-out velocity, seasonal patterns, and unit-mix performance across all locations. Know which facility types are filling fastest and where vacancy is trending up before it becomes a revenue problem.</p>
-            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;background:#0d0d10;">
+            <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.5rem;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin:0;">Occupancy Trends</h3>
+              <span style="font-size:0.75rem;font-weight:600;color:var(--cyan);white-space:nowrap;">+2.3% portfolio avg this month</span>
+            </div>
+            <p style="color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;font-size:0.9rem;">Seasonal patterns, unit-mix performance, and facility-by-facility trends. Know where vacancy is climbing before it becomes a revenue problem.</p>
+            <!-- Without / With -->
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.72rem;">
+              <span style="color:var(--text-muted);"><span style="color:#ef4444;">Today:</span> "I think occupancy dropped" but you cannot tell when, where, or which unit sizes</span>
+              <span style="color:var(--text-muted);">|</span>
+              <span style="color:var(--text-muted);"><span style="color:var(--cyan);">With StorageHub:</span> Trend line per facility, drillable by unit type</span>
+            </div>
+            <!-- Mockup -->
+            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;background:#0d0d10;">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
-                <span style="font-size:0.8rem;font-weight:600;color:var(--text-primary);">30-Day Trend</span>
-                <span style="font-size:0.65rem;color:var(--cyan);font-weight:600;">+2.3% portfolio avg</span>
+                <span style="font-size:0.85rem;font-weight:600;color:var(--text-primary);">90-Day Occupancy Trend</span>
+                <span style="font-size:0.65rem;color:var(--text-muted);">All facilities</span>
               </div>
-              <div style="display:flex;align-items:flex-end;gap:3px;height:60px;">
-                <div style="flex:1;background:rgba(16,185,129,0.3);border-radius:2px;height:45%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.3);border-radius:2px;height:52%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.4);border-radius:2px;height:48%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.4);border-radius:2px;height:55%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.5);border-radius:2px;height:60%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.5);border-radius:2px;height:58%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.6);border-radius:2px;height:65%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.6);border-radius:2px;height:70%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.7);border-radius:2px;height:72%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.8);border-radius:2px;height:78%;"></div>
-                <div style="flex:1;background:rgba(16,185,129,0.9);border-radius:2px;height:82%;"></div>
-                <div style="flex:1;background:var(--cyan);border-radius:2px;height:88%;"></div>
+              <!-- Taller bar chart -->
+              <div style="display:flex;align-items:flex-end;gap:2px;height:90px;margin-bottom:0.75rem;">
+                <div style="flex:1;background:rgba(16,185,129,0.2);border-radius:2px;height:62%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.25);border-radius:2px;height:58%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.25);border-radius:2px;height:55%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.3);border-radius:2px;height:60%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.3);border-radius:2px;height:63%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.35);border-radius:2px;height:58%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.35);border-radius:2px;height:65%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.4);border-radius:2px;height:68%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.45);border-radius:2px;height:64%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.45);border-radius:2px;height:70%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.5);border-radius:2px;height:73%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.55);border-radius:2px;height:75%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.55);border-radius:2px;height:72%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.6);border-radius:2px;height:78%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.65);border-radius:2px;height:80%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.7);border-radius:2px;height:82%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.75);border-radius:2px;height:79%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.8);border-radius:2px;height:85%;"></div>
+                <div style="flex:1;background:rgba(16,185,129,0.85);border-radius:2px;height:88%;"></div>
+                <div style="flex:1;background:var(--cyan);border-radius:2px;height:92%;"></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:0.6rem;color:var(--text-muted);margin-bottom:1rem;">
+                <span>Mar 1</span><span>Apr 1</span><span>May 9</span>
+              </div>
+              <!-- Facility breakdown -->
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+                  <div style="font-size:0.65rem;color:var(--text-muted);">Oakdale Storage</div>
+                  <div style="display:flex;align-items:baseline;gap:0.4rem;">
+                    <span style="font-size:1rem;font-weight:700;color:var(--cyan);">94.1%</span>
+                    <span style="font-size:0.6rem;color:#22c55e;">+3.2%</span>
+                  </div>
+                </div>
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+                  <div style="font-size:0.65rem;color:var(--text-muted);">Pine Valley SS</div>
+                  <div style="display:flex;align-items:baseline;gap:0.4rem;">
+                    <span style="font-size:1rem;font-weight:700;color:var(--cyan);">91.8%</span>
+                    <span style="font-size:0.6rem;color:#22c55e;">+1.5%</span>
+                  </div>
+                </div>
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+                  <div style="font-size:0.65rem;color:var(--text-muted);">Highway 9 Mini</div>
+                  <div style="display:flex;align-items:baseline;gap:0.4rem;">
+                    <span style="font-size:1rem;font-weight:700;color:#f59e0b;">87.3%</span>
+                    <span style="font-size:0.6rem;color:#ef4444;">-1.8%</span>
+                  </div>
+                </div>
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:6px;padding:0.6rem;">
+                  <div style="font-size:0.65rem;color:var(--text-muted);">Lakeview Secure</div>
+                  <div style="display:flex;align-items:baseline;gap:0.4rem;">
+                    <span style="font-size:1rem;font-weight:700;color:var(--cyan);">96.2%</span>
+                    <span style="font-size:0.6rem;color:#22c55e;">+4.1%</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">
               <span class="cap-chip">Seasonal patterns</span>
               <span class="cap-chip">Unit-mix analysis</span>
               <span class="cap-chip">Vacancy alerts</span>
             </div>
           </div>
 
+          <!-- Panel 4: Move-In Velocity -->
           <div class="cap-panel" data-panel="4">
-            <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin-bottom:0.75rem;">Move-In Velocity</h3>
-            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:1.25rem;">Track how quickly vacant units fill across each facility. Compare move-in rates by unit size, location, and pricing tier to optimize your rental strategy and reduce days-vacant.</p>
-            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;margin-bottom:1.25rem;background:#0d0d10;">
-              <div class="cap-mockup-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
-                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;">
-                  <div style="font-size:0.65rem;color:var(--text-muted);margin-bottom:0.3rem;">This Week</div>
-                  <div style="font-size:1.1rem;font-weight:700;color:var(--cyan);">14 move-ins</div>
-                  <div style="font-size:0.65rem;color:var(--text-muted);">6 move-outs</div>
+            <div style="display:flex;align-items:baseline;gap:1rem;margin-bottom:0.5rem;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:var(--text-primary);margin:0;">Move-In Velocity</h3>
+              <span style="font-size:0.75rem;font-weight:600;color:var(--cyan);white-space:nowrap;">8.2 avg days vacant (down 1.4)</span>
+            </div>
+            <p style="color:var(--text-secondary);line-height:1.65;margin-bottom:0.75rem;font-size:0.9rem;">How quickly vacant units fill across each facility. Compare move-in rates by unit size, location, and pricing tier to optimize your rental strategy and reduce days-vacant.</p>
+            <!-- Without / With -->
+            <div style="display:flex;gap:0.5rem;margin-bottom:1rem;font-size:0.72rem;">
+              <span style="color:var(--text-muted);"><span style="color:#ef4444;">Today:</span> "Are our 10x10s filling faster than 5x5s?" No idea without pulling reports</span>
+              <span style="color:var(--text-muted);">|</span>
+              <span style="color:var(--text-muted);"><span style="color:var(--cyan);">With StorageHub:</span> Split by unit size, facility, and pricing tier in one view</span>
+            </div>
+            <!-- Mockup -->
+            <div style="border:1px solid var(--border);border-radius:10px;padding:1.25rem;background:#0d0d10;">
+              <!-- Summary cards -->
+              <div class="cap-mockup-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-bottom:1rem;">
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;text-align:center;">
+                  <div style="font-size:1.1rem;font-weight:700;color:var(--cyan);">+14</div>
+                  <div style="font-size:0.6rem;color:var(--text-muted);margin-top:0.2rem;">Move-ins this week</div>
                 </div>
-                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;">
-                  <div style="font-size:0.65rem;color:var(--text-muted);margin-bottom:0.3rem;">Avg Days Vacant</div>
-                  <div style="font-size:1.1rem;font-weight:700;color:var(--text-primary);">8.2 days</div>
-                  <div style="font-size:0.65rem;color:var(--cyan);">↓ 1.4 vs last month</div>
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;text-align:center;">
+                  <div style="font-size:1.1rem;font-weight:700;color:#f59e0b;">-6</div>
+                  <div style="font-size:0.6rem;color:var(--text-muted);margin-top:0.2rem;">Move-outs this week</div>
+                </div>
+                <div style="background:#1a1a1e;border:1px solid var(--border);border-radius:8px;padding:0.75rem;text-align:center;">
+                  <div style="font-size:1.1rem;font-weight:700;color:#22c55e;">+8 net</div>
+                  <div style="font-size:0.6rem;color:var(--text-muted);margin-top:0.2rem;">Net absorption</div>
                 </div>
               </div>
+              <!-- Unit size breakdown -->
+              <div style="display:flex;flex-direction:column;gap:0.4rem;">
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.4rem 0.6rem;font-size:0.65rem;color:var(--text-muted);border-bottom:1px solid var(--border);">
+                  <span>Unit Size</span><span>Avg Days Vacant</span><span>Fill Rate</span><span>Trend</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">5x5</span>
+                  <span style="color:var(--text-primary);">4.1 days</span>
+                  <span style="color:#22c55e;">Fast</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">↑ improving</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">10x10</span>
+                  <span style="color:var(--text-primary);">6.8 days</span>
+                  <span style="color:var(--cyan);">Good</span>
+                  <span style="color:#22c55e;font-size:0.65rem;">↑ improving</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">10x15</span>
+                  <span style="color:var(--text-primary);">9.3 days</span>
+                  <span style="color:var(--cyan);">Good</span>
+                  <span style="color:var(--text-muted);font-size:0.65rem;">- stable</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">10x20</span>
+                  <span style="color:var(--text-primary);">14.2 days</span>
+                  <span style="color:#f59e0b;">Slow</span>
+                  <span style="color:#ef4444;font-size:0.65rem;">↓ slowing</span>
+                </div>
+                <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0.5rem;padding:0.45rem 0.6rem;background:#1a1a1e;border-radius:5px;font-size:0.72rem;">
+                  <span style="color:var(--text-secondary);">10x30</span>
+                  <span style="color:var(--text-primary);">18.7 days</span>
+                  <span style="color:#ef4444;">Slow</span>
+                  <span style="color:#ef4444;font-size:0.65rem;">↓ slowing</span>
+                </div>
+              </div>
+              <div style="margin-top:0.75rem;padding-top:0.65rem;border-top:1px solid var(--border);">
+                <span style="font-size:0.7rem;color:var(--text-muted);">Portfolio avg: <span style="color:var(--cyan);font-weight:600;">8.2 days</span> (down from 9.6 last month)</span>
+              </div>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem;">
               <span class="cap-chip">Net absorption</span>
               <span class="cap-chip">Days-vacant tracking</span>
-              <span class="cap-chip">Size comparison</span>
+              <span class="cap-chip">Unit size comparison</span>
             </div>
           </div>
         </div>
