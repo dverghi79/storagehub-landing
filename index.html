@@ -287,7 +287,14 @@
 
     /* ── Hero grid ── */
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; max-width: 1120px; }
-    @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero-image { order: -1; margin-bottom: 1.5rem; } }
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-text { display: contents; }
+      .hero-text > .reveal:first-child { order: 1; }   /* badge */
+      .hero-text > h1 { order: 2; }                     /* headline */
+      .hero-image { order: 3; margin-bottom: 1rem; }    /* image + founder badge */
+      .hero-below-image { order: 4; }                   /* subheadline, bullets, CTAs */
+    }
 
     /* ── Step indicator ── */
     .step-num { width: 2.5rem; height: 2.5rem; border-radius: 12px; background: var(--cyan-glow); display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 700; color: var(--cyan); flex-shrink: 0; }
@@ -386,7 +393,7 @@
     <div class="container" style="position:relative;z-index:1;">
       <div class="hero-grid">
         <!-- Left: Copy -->
-        <div>
+        <div class="hero-text">
           <div class="reveal" style="margin-bottom:1.5rem;">
             <div class="badge"><span class="dot"></span> Early Access Open · Limited spots</div>
           </div>
@@ -394,6 +401,7 @@
           <h1 id="hero-headline" class="reveal reveal-delay-1" data-default-headline="Know exactly where every dollar is across every facility." style="font-size:clamp(2.25rem,4.5vw,3.25rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:1rem;color:var(--text-primary);">
             Know exactly where every dollar is <span class="gradient-text">across every facility.</span>
           </h1>
+          <div class="hero-below-image">
           <p class="reveal reveal-delay-1" style="font-size:1.1rem;color:var(--text-secondary);max-width:540px;margin-bottom:1.5rem;line-height:1.6;">Without manual reconciliation, without logging into 5 systems every morning, without building another spreadsheet. Just one dashboard, connected to storEDGE and QuickBooks in minutes.</p>
 
           <div class="reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:0.65rem;margin-bottom:2.5rem;max-width:600px;">
@@ -433,6 +441,7 @@
               Demo dashboard included
             </span>
           </div>
+          </div><!-- end .hero-below-image -->
         </div>
 
         <!-- Right: Hero AI image + founder proof badge -->
