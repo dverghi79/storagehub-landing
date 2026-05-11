@@ -90,22 +90,6 @@
     });
   </script>
 
-  <!-- DKI Headline Replacement -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var params = new URLSearchParams(window.location.search);
-      var headline = params.get('headline');
-      if (headline) {
-        var h1 = document.getElementById('hero-headline');
-        if (h1) {
-          if (!h1.getAttribute('data-default-headline')) {
-            h1.setAttribute('data-default-headline', h1.textContent);
-          }
-          h1.textContent = headline.replace(/\+/g, ' ');
-        }
-      }
-    });
-  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -400,7 +384,7 @@
             <div class="badge"><span class="dot"></span> Early Access Open · Limited spots</div>
           </div>
 
-          <h1 id="hero-headline" class="reveal reveal-delay-1" data-default-headline="Know exactly where every dollar is across every facility. Live in 10 minutes." style="font-size:clamp(2.25rem,4.5vw,3.25rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:1rem;color:var(--text-primary);">
+          <h1 id="hero-headline" class="reveal reveal-delay-1" style="font-size:clamp(2.25rem,4.5vw,3.25rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:1rem;color:var(--text-primary);">
             Know exactly where every dollar is across every facility. <span class="gradient-text">Live in 10 minutes.</span>
           </h1>
           <div class="hero-below-image">
